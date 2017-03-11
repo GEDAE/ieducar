@@ -1,3 +1,5 @@
-# Vagrant 
+# Vagrant
 /.vagrant
-Vagrantfile
+composer.lock
+composer.phar
+vendor/
