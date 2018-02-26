@@ -49,13 +49,26 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-server "200.19.32.113",
-  user: "ifms",
+# server "200.19.32.113",
+#   user: "ifms",
+#   roles: %w{web app},
+#   ssh_options: {
+#     user: "ifms", # overrides user setting above
+#     #keys: %w(/home/user_name/.ssh/id_rsa),
+#     forward_agent: false,
+#     auth_methods: %w(password),
+#     password: "readmedrive"
+#   }
+
+
+server "localhost",
+  user: "vagrant",
   roles: %w{web app},
   ssh_options: {
-    user: "ifms", # overrides user setting above
+    port: 2223,
+    user: "vagrant", # overrides user setting above
     #keys: %w(/home/user_name/.ssh/id_rsa),
     forward_agent: false,
     auth_methods: %w(password),
     password: "readmedrive"
-  }
+}

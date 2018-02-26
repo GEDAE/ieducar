@@ -9,7 +9,7 @@ set :repo_url, "https://github.com/GEDAE/ieducar.git"
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/ieducar/app"
-
+set :composer_working_dir, "#{release_path.join("ieducar")}"
 SSHKit.config.command_map[:composer] = "php #{shared_path.join("composer.phar")}"
 
 namespace :deploy do
@@ -30,7 +30,7 @@ end
 append :linked_files, "phinx.yml", "ieducar/configuration/ieducar.ini"
 
 # Default value for linked_dirs is []
-append :linked_dirs, "vendor"
+append :linked_dirs, "ieducar/vendor"
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
