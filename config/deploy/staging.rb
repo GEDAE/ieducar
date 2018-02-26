@@ -59,3 +59,14 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+server "200.19.32.113",
+  user: "ifms",
+  roles: %w{web app},
+  ssh_options: {
+    port: 22,
+    user: "ifms", # overrides user setting above
+    #keys: %w(/home/user_name/.ssh/id_rsa),
+    forward_agent: false,
+    auth_methods: %w(password),
+    password: "readmedrive"
+}

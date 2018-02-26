@@ -2978,3 +2978,890 @@ Composer (version 1.6.3) successfully installed to: /home/ieducar/app/shared/com
   INFO [3cf86495] Running /usr/bin/env ieducar/vendor/bin/phinx migrate -e development as vagrant@localhost
  DEBUG [3cf86495] Command: cd /home/ieducar/app/releases/20180226141217 && /usr/bin/env ieducar/vendor/bin/phinx migrate -e development
  DEBUG [3cf86495] 	/usr/bin/env: ieducar/vendor/bin/phinx: No such file or directory
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-02-26 10:14:39 -0400 cap develop deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8b3dcd7c] Running /usr/bin/env mkdir -p /tmp as vagrant@localhost
+ DEBUG [8b3dcd7c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [8b3dcd7c] Finished in 5.018 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ieducar-develop-rsdevigo.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ieducar-develop-rsdevigo.sh 100.0%
+  INFO [0f2d19fd] Running /usr/bin/env chmod 700 /tmp/git-ssh-ieducar-develop-rsdevigo.sh as vagrant@localhost
+ DEBUG [0f2d19fd] Command: /usr/bin/env chmod 700 /tmp/git-ssh-ieducar-develop-rsdevigo.sh
+  INFO [0f2d19fd] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [4bf131d9] Running /usr/bin/env git ls-remote https://github.com/GEDAE/ieducar.git HEAD as vagrant@localhost
+ DEBUG [4bf131d9] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git ls-remote https://github.com/GEDAE/ieducar.git HEAD )
+ DEBUG [4bf131d9] 	399cfaaf9eeee400a74453878e297a7acc496543	HEAD
+  INFO [4bf131d9] Finished in 1.606 seconds with exit status 0 (successful).
+  INFO [15caea5b] Running /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/releases as vagrant@localhost
+ DEBUG [15caea5b] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/releases
+  INFO [15caea5b] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [22226920] Running /usr/bin/env mkdir -p /home/ieducar/app/shared/ieducar/vendor as vagrant@localhost
+ DEBUG [22226920] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared/ieducar/vendor
+  INFO [22226920] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [147c8e5f] Running /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/shared/ieducar/configuration as vagrant@localhost
+ DEBUG [147c8e5f] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/shared/ieducar/configuration
+  INFO [147c8e5f] Finished in 0.010 seconds with exit status 0 (successful).
+ DEBUG [25922d78] Running [ -f /home/ieducar/app/shared/phinx.yml ] as vagrant@localhost
+ DEBUG [25922d78] Command: [ -f /home/ieducar/app/shared/phinx.yml ]
+ DEBUG [25922d78] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [bd818448] Running [ -f /home/ieducar/app/shared/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [bd818448] Command: [ -f /home/ieducar/app/shared/ieducar/configuration/ieducar.ini ]
+ DEBUG [bd818448] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [06d06c0a] Running [ -f /home/ieducar/app/current/REVISION ] as vagrant@localhost
+ DEBUG [06d06c0a] Command: [ -f /home/ieducar/app/current/REVISION ]
+ DEBUG [06d06c0a] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [784cac16] Running /usr/bin/env cat /home/ieducar/app/current/REVISION 2>/dev/null as vagrant@localhost
+ DEBUG [784cac16] Command: /usr/bin/env cat /home/ieducar/app/current/REVISION 2>/dev/null
+ DEBUG [784cac16] 	a1658ba3e2cfadbeeb53fe6c66fa8a40912fc73b
+ DEBUG [784cac16] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG [309791ef] Running if test ! -d /home/ieducar/app/shared; then echo "Directory does not exist '/home/ieducar/app/shared'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [309791ef] Command: if test ! -d /home/ieducar/app/shared; then echo "Directory does not exist '/home/ieducar/app/shared'" 1>&2; false; fi
+ DEBUG [309791ef] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [ab0e263b] Running /usr/bin/env [ -e composer.phar ] as vagrant@localhost
+ DEBUG [ab0e263b] Command: cd /home/ieducar/app/shared && /usr/bin/env [ -e composer.phar ]
+ DEBUG [ab0e263b] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [8cc01c20] Running [ -f /home/ieducar/app/repo/HEAD ] as vagrant@localhost
+ DEBUG [8cc01c20] Command: [ -f /home/ieducar/app/repo/HEAD ]
+ DEBUG [8cc01c20] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ieducar/app/repo
+ DEBUG [3cdfdccf] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [3cdfdccf] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [3cdfdccf] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [f7728aa9] Running /usr/bin/env git remote set-url origin https://github.com/GEDAE/ieducar.git as vagrant@localhost
+ DEBUG [f7728aa9] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git remote set-url origin https://github.com/GEDAE/ieducar.git )
+  INFO [f7728aa9] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [8ae02268] Running /usr/bin/env git remote update --prune as vagrant@localhost
+ DEBUG [8ae02268] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [8ae02268] 	Fetching origin
+ DEBUG [8ae02268] 	From https://github.com/GEDAE/ieducar
+ DEBUG [8ae02268] 	   063a166..399cfaa  master     -> master
+  INFO [8ae02268] Finished in 2.547 seconds with exit status 0 (successful).
+ DEBUG [5ad2a9aa] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [5ad2a9aa] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [5ad2a9aa] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [42f4fe42] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141446 as vagrant@localhost
+ DEBUG [42f4fe42] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141446 )
+  INFO [42f4fe42] Finished in 0.010 seconds with exit status 0 (successful).
+  INFO [3b58dc41] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ieducar/app/releases/20180226141446 as vagrant@localhost
+ DEBUG [3b58dc41] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ieducar/app/releases/20180226141446 )
+  INFO [3b58dc41] Finished in 0.468 seconds with exit status 0 (successful).
+ DEBUG [6922e712] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [6922e712] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [6922e712] Finished in 0.011 seconds with exit status 0 (successful).
+ DEBUG [ef086c70] Running /usr/bin/env git rev-list --max-count=1 master as vagrant@localhost
+ DEBUG [ef086c70] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [ef086c70] 	399cfaaf9eeee400a74453878e297a7acc496543
+ DEBUG [ef086c70] Finished in 0.010 seconds with exit status 0 (successful).
+ DEBUG [37944469] Running if test ! -d /home/ieducar/app/releases/20180226141446; then echo "Directory does not exist '/home/ieducar/app/releases/20180226141446'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [37944469] Command: if test ! -d /home/ieducar/app/releases/20180226141446; then echo "Directory does not exist '/home/ieducar/app/releases/20180226141446'" 1>&2; false; fi
+ DEBUG [37944469] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [d6979ae3] Running /usr/bin/env echo "399cfaaf9eeee400a74453878e297a7acc496543" >> REVISION as vagrant@localhost
+ DEBUG [d6979ae3] Command: cd /home/ieducar/app/releases/20180226141446 && /usr/bin/env echo "399cfaaf9eeee400a74453878e297a7acc496543" >> REVISION
+  INFO [d6979ae3] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [1be3d441] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141446 /home/ieducar/app/releases/20180226141446/ieducar/configuration as vagrant@localhost
+ DEBUG [1be3d441] Command: /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141446 /home/ieducar/app/releases/20180226141446/ieducar/configuration
+  INFO [1be3d441] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG [8bdc8d00] Running [ -L /home/ieducar/app/releases/20180226141446/phinx.yml ] as vagrant@localhost
+ DEBUG [8bdc8d00] Command: [ -L /home/ieducar/app/releases/20180226141446/phinx.yml ]
+ DEBUG [8bdc8d00] Finished in 0.005 seconds with exit status 1 (failed).
+ DEBUG [bf853b8e] Running [ -f /home/ieducar/app/releases/20180226141446/phinx.yml ] as vagrant@localhost
+ DEBUG [bf853b8e] Command: [ -f /home/ieducar/app/releases/20180226141446/phinx.yml ]
+ DEBUG [bf853b8e] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [a9ade00d] Running /usr/bin/env rm /home/ieducar/app/releases/20180226141446/phinx.yml as vagrant@localhost
+ DEBUG [a9ade00d] Command: /usr/bin/env rm /home/ieducar/app/releases/20180226141446/phinx.yml
+  INFO [a9ade00d] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [f12c131d] Running /usr/bin/env ln -s /home/ieducar/app/shared/phinx.yml /home/ieducar/app/releases/20180226141446/phinx.yml as vagrant@localhost
+ DEBUG [f12c131d] Command: /usr/bin/env ln -s /home/ieducar/app/shared/phinx.yml /home/ieducar/app/releases/20180226141446/phinx.yml
+  INFO [f12c131d] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [98042609] Running [ -L /home/ieducar/app/releases/20180226141446/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [98042609] Command: [ -L /home/ieducar/app/releases/20180226141446/ieducar/configuration/ieducar.ini ]
+ DEBUG [98042609] Finished in 0.007 seconds with exit status 1 (failed).
+ DEBUG [24993934] Running [ -f /home/ieducar/app/releases/20180226141446/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [24993934] Command: [ -f /home/ieducar/app/releases/20180226141446/ieducar/configuration/ieducar.ini ]
+ DEBUG [24993934] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [0102c44b] Running /usr/bin/env rm /home/ieducar/app/releases/20180226141446/ieducar/configuration/ieducar.ini as vagrant@localhost
+ DEBUG [0102c44b] Command: /usr/bin/env rm /home/ieducar/app/releases/20180226141446/ieducar/configuration/ieducar.ini
+  INFO [0102c44b] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [54ff4c6b] Running /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/configuration/ieducar.ini /home/ieducar/app/releases/20180226141446/ieducar/configuration/ieducar.ini as vagrant@localhost
+ DEBUG [54ff4c6b] Command: /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/configuration/ieducar.ini /home/ieducar/app/releases/20180226141446/ieducar/configuration/ieducar.ini
+  INFO [54ff4c6b] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [043b8ac0] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141446/ieducar as vagrant@localhost
+ DEBUG [043b8ac0] Command: /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141446/ieducar
+  INFO [043b8ac0] Finished in 0.010 seconds with exit status 0 (successful).
+ DEBUG [a163a992] Running [ -L /home/ieducar/app/releases/20180226141446/ieducar/vendor ] as vagrant@localhost
+ DEBUG [a163a992] Command: [ -L /home/ieducar/app/releases/20180226141446/ieducar/vendor ]
+ DEBUG [a163a992] Finished in 0.005 seconds with exit status 1 (failed).
+ DEBUG [de10520c] Running [ -d /home/ieducar/app/releases/20180226141446/ieducar/vendor ] as vagrant@localhost
+ DEBUG [de10520c] Command: [ -d /home/ieducar/app/releases/20180226141446/ieducar/vendor ]
+ DEBUG [de10520c] Finished in 0.006 seconds with exit status 1 (failed).
+  INFO [efa578f9] Running /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/vendor /home/ieducar/app/releases/20180226141446/ieducar/vendor as vagrant@localhost
+ DEBUG [efa578f9] Command: /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/vendor /home/ieducar/app/releases/20180226141446/ieducar/vendor
+  INFO [efa578f9] Finished in 0.011 seconds with exit status 0 (successful).
+ DEBUG [3efa748e] Running if test ! -d /home/ieducar/app/current/ieducar; then echo "Directory does not exist '/home/ieducar/app/current/ieducar'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [3efa748e] Command: if test ! -d /home/ieducar/app/current/ieducar; then echo "Directory does not exist '/home/ieducar/app/current/ieducar'" 1>&2; false; fi
+ DEBUG [3efa748e] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [71068066] Running php /home/ieducar/app/shared/composer.phar install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader as vagrant@localhost
+ DEBUG [71068066] Command: cd /home/ieducar/app/current/ieducar && php /home/ieducar/app/shared/composer.phar install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader
+  INFO [71068066] Finished in 0.511 seconds with exit status 0 (successful).
+ DEBUG [cc5e6081] Running if test ! -d /home/ieducar/app/releases/20180226141446; then echo "Directory does not exist '/home/ieducar/app/releases/20180226141446'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [cc5e6081] Command: if test ! -d /home/ieducar/app/releases/20180226141446; then echo "Directory does not exist '/home/ieducar/app/releases/20180226141446'" 1>&2; false; fi
+ DEBUG [cc5e6081] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [5114b22c] Running /usr/bin/env ieducar/vendor/bin/phinx migrate -e development as vagrant@localhost
+ DEBUG [5114b22c] Command: cd /home/ieducar/app/releases/20180226141446 && /usr/bin/env ieducar/vendor/bin/phinx migrate -e development
+ DEBUG [5114b22c] 	/usr/bin/env: ieducar/vendor/bin/phinx: No such file or directory
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-02-26 10:16:21 -0400 cap develop deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [871c7271] Running /usr/bin/env mkdir -p /tmp as vagrant@localhost
+ DEBUG [871c7271] Command: /usr/bin/env mkdir -p /tmp
+  INFO [871c7271] Finished in 4.614 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ieducar-develop-rsdevigo.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ieducar-develop-rsdevigo.sh 100.0%
+  INFO [ef5356de] Running /usr/bin/env chmod 700 /tmp/git-ssh-ieducar-develop-rsdevigo.sh as vagrant@localhost
+ DEBUG [ef5356de] Command: /usr/bin/env chmod 700 /tmp/git-ssh-ieducar-develop-rsdevigo.sh
+  INFO [ef5356de] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [6f124f02] Running /usr/bin/env git ls-remote https://github.com/GEDAE/ieducar.git HEAD as vagrant@localhost
+ DEBUG [6f124f02] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git ls-remote https://github.com/GEDAE/ieducar.git HEAD )
+ DEBUG [6f124f02] 	399cfaaf9eeee400a74453878e297a7acc496543	HEAD
+  INFO [6f124f02] Finished in 1.270 seconds with exit status 0 (successful).
+  INFO [41b695b4] Running /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/releases as vagrant@localhost
+ DEBUG [41b695b4] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/releases
+  INFO [41b695b4] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [92cc39dd] Running /usr/bin/env mkdir -p /home/ieducar/app/shared/ieducar/vendor as vagrant@localhost
+ DEBUG [92cc39dd] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared/ieducar/vendor
+  INFO [92cc39dd] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [d69d9391] Running /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/shared/ieducar/configuration as vagrant@localhost
+ DEBUG [d69d9391] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/shared/ieducar/configuration
+  INFO [d69d9391] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG [5bac70fb] Running [ -f /home/ieducar/app/shared/phinx.yml ] as vagrant@localhost
+ DEBUG [5bac70fb] Command: [ -f /home/ieducar/app/shared/phinx.yml ]
+ DEBUG [5bac70fb] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [0661fafb] Running [ -f /home/ieducar/app/shared/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [0661fafb] Command: [ -f /home/ieducar/app/shared/ieducar/configuration/ieducar.ini ]
+ DEBUG [0661fafb] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [9d08cefd] Running [ -f /home/ieducar/app/current/REVISION ] as vagrant@localhost
+ DEBUG [9d08cefd] Command: [ -f /home/ieducar/app/current/REVISION ]
+ DEBUG [9d08cefd] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [b5d6e5d3] Running /usr/bin/env cat /home/ieducar/app/current/REVISION 2>/dev/null as vagrant@localhost
+ DEBUG [b5d6e5d3] Command: /usr/bin/env cat /home/ieducar/app/current/REVISION 2>/dev/null
+ DEBUG [b5d6e5d3] 	a1658ba3e2cfadbeeb53fe6c66fa8a40912fc73b
+ DEBUG [b5d6e5d3] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-02-26 10:16:56 -0400 cap develop deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [b6bfe0ac] Running /usr/bin/env mkdir -p /tmp as vagrant@localhost
+ DEBUG [b6bfe0ac] Command: /usr/bin/env mkdir -p /tmp
+  INFO [b6bfe0ac] Finished in 4.438 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ieducar-develop-rsdevigo.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ieducar-develop-rsdevigo.sh 100.0%
+  INFO [01e4734f] Running /usr/bin/env chmod 700 /tmp/git-ssh-ieducar-develop-rsdevigo.sh as vagrant@localhost
+ DEBUG [01e4734f] Command: /usr/bin/env chmod 700 /tmp/git-ssh-ieducar-develop-rsdevigo.sh
+  INFO [01e4734f] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [c61bf817] Running /usr/bin/env git ls-remote https://github.com/GEDAE/ieducar.git HEAD as vagrant@localhost
+ DEBUG [c61bf817] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git ls-remote https://github.com/GEDAE/ieducar.git HEAD )
+ DEBUG [c61bf817] 	399cfaaf9eeee400a74453878e297a7acc496543	HEAD
+  INFO [c61bf817] Finished in 3.223 seconds with exit status 0 (successful).
+  INFO [fc280a98] Running /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/releases as vagrant@localhost
+ DEBUG [fc280a98] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/releases
+  INFO [fc280a98] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [13d3107e] Running /usr/bin/env mkdir -p /home/ieducar/app/shared/ieducar/vendor as vagrant@localhost
+ DEBUG [13d3107e] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared/ieducar/vendor
+  INFO [13d3107e] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [0f6de545] Running /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/shared/ieducar/configuration as vagrant@localhost
+ DEBUG [0f6de545] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/shared/ieducar/configuration
+  INFO [0f6de545] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [155426f9] Running [ -f /home/ieducar/app/shared/phinx.yml ] as vagrant@localhost
+ DEBUG [155426f9] Command: [ -f /home/ieducar/app/shared/phinx.yml ]
+ DEBUG [155426f9] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [68116f4f] Running [ -f /home/ieducar/app/shared/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [68116f4f] Command: [ -f /home/ieducar/app/shared/ieducar/configuration/ieducar.ini ]
+ DEBUG [68116f4f] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [0c87fc3b] Running [ -f /home/ieducar/app/current/REVISION ] as vagrant@localhost
+ DEBUG [0c87fc3b] Command: [ -f /home/ieducar/app/current/REVISION ]
+ DEBUG [0c87fc3b] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [3f8fc70e] Running /usr/bin/env cat /home/ieducar/app/current/REVISION 2>/dev/null as vagrant@localhost
+ DEBUG [3f8fc70e] Command: /usr/bin/env cat /home/ieducar/app/current/REVISION 2>/dev/null
+ DEBUG [3f8fc70e] 	a1658ba3e2cfadbeeb53fe6c66fa8a40912fc73b
+ DEBUG [3f8fc70e] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [51898abf] Running [ -f /home/ieducar/app/repo/HEAD ] as vagrant@localhost
+ DEBUG [51898abf] Command: [ -f /home/ieducar/app/repo/HEAD ]
+ DEBUG [51898abf] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ieducar/app/repo
+ DEBUG [27816d98] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [27816d98] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [27816d98] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [99088dd4] Running /usr/bin/env git remote set-url origin https://github.com/GEDAE/ieducar.git as vagrant@localhost
+ DEBUG [99088dd4] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git remote set-url origin https://github.com/GEDAE/ieducar.git )
+  INFO [99088dd4] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [0c25c40e] Running /usr/bin/env git remote update --prune as vagrant@localhost
+ DEBUG [0c25c40e] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [0c25c40e] 	Fetching origin
+  INFO [0c25c40e] Finished in 1.879 seconds with exit status 0 (successful).
+ DEBUG [95049efc] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [95049efc] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [95049efc] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [a3b3093e] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141704 as vagrant@localhost
+ DEBUG [a3b3093e] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141704 )
+  INFO [a3b3093e] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [0e2838ab] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ieducar/app/releases/20180226141704 as vagrant@localhost
+ DEBUG [0e2838ab] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ieducar/app/releases/20180226141704 )
+  INFO [0e2838ab] Finished in 0.370 seconds with exit status 0 (successful).
+ DEBUG [22d82889] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [22d82889] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [22d82889] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [e79eabed] Running /usr/bin/env git rev-list --max-count=1 master as vagrant@localhost
+ DEBUG [e79eabed] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [e79eabed] 	399cfaaf9eeee400a74453878e297a7acc496543
+ DEBUG [e79eabed] Finished in 0.011 seconds with exit status 0 (successful).
+ DEBUG [3eba9694] Running if test ! -d /home/ieducar/app/releases/20180226141704; then echo "Directory does not exist '/home/ieducar/app/releases/20180226141704'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [3eba9694] Command: if test ! -d /home/ieducar/app/releases/20180226141704; then echo "Directory does not exist '/home/ieducar/app/releases/20180226141704'" 1>&2; false; fi
+ DEBUG [3eba9694] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [4bd9ad1f] Running /usr/bin/env echo "399cfaaf9eeee400a74453878e297a7acc496543" >> REVISION as vagrant@localhost
+ DEBUG [4bd9ad1f] Command: cd /home/ieducar/app/releases/20180226141704 && /usr/bin/env echo "399cfaaf9eeee400a74453878e297a7acc496543" >> REVISION
+  INFO [4bd9ad1f] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [59b839d1] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141704 /home/ieducar/app/releases/20180226141704/ieducar/configuration as vagrant@localhost
+ DEBUG [59b839d1] Command: /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141704 /home/ieducar/app/releases/20180226141704/ieducar/configuration
+  INFO [59b839d1] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG [f7c5beec] Running [ -L /home/ieducar/app/releases/20180226141704/phinx.yml ] as vagrant@localhost
+ DEBUG [f7c5beec] Command: [ -L /home/ieducar/app/releases/20180226141704/phinx.yml ]
+ DEBUG [f7c5beec] Finished in 0.006 seconds with exit status 1 (failed).
+ DEBUG [89fab35b] Running [ -f /home/ieducar/app/releases/20180226141704/phinx.yml ] as vagrant@localhost
+ DEBUG [89fab35b] Command: [ -f /home/ieducar/app/releases/20180226141704/phinx.yml ]
+ DEBUG [89fab35b] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [6099e52f] Running /usr/bin/env rm /home/ieducar/app/releases/20180226141704/phinx.yml as vagrant@localhost
+ DEBUG [6099e52f] Command: /usr/bin/env rm /home/ieducar/app/releases/20180226141704/phinx.yml
+  INFO [6099e52f] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [8bb52c6b] Running /usr/bin/env ln -s /home/ieducar/app/shared/phinx.yml /home/ieducar/app/releases/20180226141704/phinx.yml as vagrant@localhost
+ DEBUG [8bb52c6b] Command: /usr/bin/env ln -s /home/ieducar/app/shared/phinx.yml /home/ieducar/app/releases/20180226141704/phinx.yml
+  INFO [8bb52c6b] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [fdf88e71] Running [ -L /home/ieducar/app/releases/20180226141704/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [fdf88e71] Command: [ -L /home/ieducar/app/releases/20180226141704/ieducar/configuration/ieducar.ini ]
+ DEBUG [fdf88e71] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [15bdc471] Running [ -f /home/ieducar/app/releases/20180226141704/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [15bdc471] Command: [ -f /home/ieducar/app/releases/20180226141704/ieducar/configuration/ieducar.ini ]
+ DEBUG [15bdc471] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [45687650] Running /usr/bin/env rm /home/ieducar/app/releases/20180226141704/ieducar/configuration/ieducar.ini as vagrant@localhost
+ DEBUG [45687650] Command: /usr/bin/env rm /home/ieducar/app/releases/20180226141704/ieducar/configuration/ieducar.ini
+  INFO [45687650] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [4c26fed8] Running /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/configuration/ieducar.ini /home/ieducar/app/releases/20180226141704/ieducar/configuration/ieducar.ini as vagrant@localhost
+ DEBUG [4c26fed8] Command: /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/configuration/ieducar.ini /home/ieducar/app/releases/20180226141704/ieducar/configuration/ieducar.ini
+  INFO [4c26fed8] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [dc51a893] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141704/ieducar as vagrant@localhost
+ DEBUG [dc51a893] Command: /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141704/ieducar
+  INFO [dc51a893] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [225662a8] Running [ -L /home/ieducar/app/releases/20180226141704/ieducar/vendor ] as vagrant@localhost
+ DEBUG [225662a8] Command: [ -L /home/ieducar/app/releases/20180226141704/ieducar/vendor ]
+ DEBUG [225662a8] Finished in 0.004 seconds with exit status 1 (failed).
+ DEBUG [7753020e] Running [ -d /home/ieducar/app/releases/20180226141704/ieducar/vendor ] as vagrant@localhost
+ DEBUG [7753020e] Command: [ -d /home/ieducar/app/releases/20180226141704/ieducar/vendor ]
+ DEBUG [7753020e] Finished in 0.006 seconds with exit status 1 (failed).
+  INFO [9a908214] Running /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/vendor /home/ieducar/app/releases/20180226141704/ieducar/vendor as vagrant@localhost
+ DEBUG [9a908214] Command: /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/vendor /home/ieducar/app/releases/20180226141704/ieducar/vendor
+  INFO [9a908214] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [29990488] Running if test ! -d /home/ieducar/app/releases/20180226141704; then echo "Directory does not exist '/home/ieducar/app/releases/20180226141704'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [29990488] Command: if test ! -d /home/ieducar/app/releases/20180226141704; then echo "Directory does not exist '/home/ieducar/app/releases/20180226141704'" 1>&2; false; fi
+ DEBUG [29990488] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [02042489] Running /usr/bin/env ieducar/vendor/bin/phinx migrate -e development as vagrant@localhost
+ DEBUG [02042489] Command: cd /home/ieducar/app/releases/20180226141704 && /usr/bin/env ieducar/vendor/bin/phinx migrate -e development
+ DEBUG [02042489] 	/usr/bin/env: ieducar/vendor/bin/phinx: No such file or directory
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-02-26 10:17:24 -0400 cap develop deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [6faecf54] Running /usr/bin/env mkdir -p /tmp as vagrant@localhost
+ DEBUG [6faecf54] Command: /usr/bin/env mkdir -p /tmp
+  INFO [6faecf54] Finished in 4.553 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ieducar-develop-rsdevigo.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ieducar-develop-rsdevigo.sh 100.0%
+  INFO [fbe85cf8] Running /usr/bin/env chmod 700 /tmp/git-ssh-ieducar-develop-rsdevigo.sh as vagrant@localhost
+ DEBUG [fbe85cf8] Command: /usr/bin/env chmod 700 /tmp/git-ssh-ieducar-develop-rsdevigo.sh
+  INFO [fbe85cf8] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [4b343298] Running /usr/bin/env git ls-remote https://github.com/GEDAE/ieducar.git HEAD as vagrant@localhost
+ DEBUG [4b343298] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git ls-remote https://github.com/GEDAE/ieducar.git HEAD )
+ DEBUG [4b343298] 	399cfaaf9eeee400a74453878e297a7acc496543	HEAD
+  INFO [4b343298] Finished in 1.309 seconds with exit status 0 (successful).
+  INFO [b69fb0e6] Running /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/releases as vagrant@localhost
+ DEBUG [b69fb0e6] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/releases
+  INFO [b69fb0e6] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [cd54c8bf] Running /usr/bin/env mkdir -p /home/ieducar/app/shared/ieducar/vendor as vagrant@localhost
+ DEBUG [cd54c8bf] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared/ieducar/vendor
+  INFO [cd54c8bf] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [daf2e516] Running /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/shared/ieducar/configuration as vagrant@localhost
+ DEBUG [daf2e516] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/shared/ieducar/configuration
+  INFO [daf2e516] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [1a23881e] Running [ -f /home/ieducar/app/shared/phinx.yml ] as vagrant@localhost
+ DEBUG [1a23881e] Command: [ -f /home/ieducar/app/shared/phinx.yml ]
+ DEBUG [1a23881e] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [88605693] Running [ -f /home/ieducar/app/shared/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [88605693] Command: [ -f /home/ieducar/app/shared/ieducar/configuration/ieducar.ini ]
+ DEBUG [88605693] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [e1ecb831] Running [ -f /home/ieducar/app/current/REVISION ] as vagrant@localhost
+ DEBUG [e1ecb831] Command: [ -f /home/ieducar/app/current/REVISION ]
+ DEBUG [e1ecb831] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [f3ec80bc] Running /usr/bin/env cat /home/ieducar/app/current/REVISION 2>/dev/null as vagrant@localhost
+ DEBUG [f3ec80bc] Command: /usr/bin/env cat /home/ieducar/app/current/REVISION 2>/dev/null
+ DEBUG [f3ec80bc] 	a1658ba3e2cfadbeeb53fe6c66fa8a40912fc73b
+ DEBUG [f3ec80bc] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [a28d72c9] Running [ -f /home/ieducar/app/repo/HEAD ] as vagrant@localhost
+ DEBUG [a28d72c9] Command: [ -f /home/ieducar/app/repo/HEAD ]
+ DEBUG [a28d72c9] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ieducar/app/repo
+ DEBUG [c788369b] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [c788369b] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [c788369b] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [55fd3958] Running /usr/bin/env git remote set-url origin https://github.com/GEDAE/ieducar.git as vagrant@localhost
+ DEBUG [55fd3958] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git remote set-url origin https://github.com/GEDAE/ieducar.git )
+  INFO [55fd3958] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [9f19792e] Running /usr/bin/env git remote update --prune as vagrant@localhost
+ DEBUG [9f19792e] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [9f19792e] 	Fetching origin
+  INFO [9f19792e] Finished in 2.423 seconds with exit status 0 (successful).
+ DEBUG [84297656] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [84297656] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [84297656] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [ed026ed2] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141730 as vagrant@localhost
+ DEBUG [ed026ed2] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141730 )
+  INFO [ed026ed2] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [29ebfe30] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ieducar/app/releases/20180226141730 as vagrant@localhost
+ DEBUG [29ebfe30] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ieducar/app/releases/20180226141730 )
+  INFO [29ebfe30] Finished in 0.390 seconds with exit status 0 (successful).
+ DEBUG [83d281e0] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [83d281e0] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [83d281e0] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [28428161] Running /usr/bin/env git rev-list --max-count=1 master as vagrant@localhost
+ DEBUG [28428161] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [28428161] 	399cfaaf9eeee400a74453878e297a7acc496543
+ DEBUG [28428161] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG [44d750b6] Running if test ! -d /home/ieducar/app/releases/20180226141730; then echo "Directory does not exist '/home/ieducar/app/releases/20180226141730'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [44d750b6] Command: if test ! -d /home/ieducar/app/releases/20180226141730; then echo "Directory does not exist '/home/ieducar/app/releases/20180226141730'" 1>&2; false; fi
+ DEBUG [44d750b6] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [3405ea2d] Running /usr/bin/env echo "399cfaaf9eeee400a74453878e297a7acc496543" >> REVISION as vagrant@localhost
+ DEBUG [3405ea2d] Command: cd /home/ieducar/app/releases/20180226141730 && /usr/bin/env echo "399cfaaf9eeee400a74453878e297a7acc496543" >> REVISION
+  INFO [3405ea2d] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [06f7b141] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141730 /home/ieducar/app/releases/20180226141730/ieducar/configuration as vagrant@localhost
+ DEBUG [06f7b141] Command: /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141730 /home/ieducar/app/releases/20180226141730/ieducar/configuration
+  INFO [06f7b141] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [385c1ea0] Running [ -L /home/ieducar/app/releases/20180226141730/phinx.yml ] as vagrant@localhost
+ DEBUG [385c1ea0] Command: [ -L /home/ieducar/app/releases/20180226141730/phinx.yml ]
+ DEBUG [385c1ea0] Finished in 0.006 seconds with exit status 1 (failed).
+ DEBUG [65a9e8b5] Running [ -f /home/ieducar/app/releases/20180226141730/phinx.yml ] as vagrant@localhost
+ DEBUG [65a9e8b5] Command: [ -f /home/ieducar/app/releases/20180226141730/phinx.yml ]
+ DEBUG [65a9e8b5] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [9ef04884] Running /usr/bin/env rm /home/ieducar/app/releases/20180226141730/phinx.yml as vagrant@localhost
+ DEBUG [9ef04884] Command: /usr/bin/env rm /home/ieducar/app/releases/20180226141730/phinx.yml
+  INFO [9ef04884] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [c430c5ef] Running /usr/bin/env ln -s /home/ieducar/app/shared/phinx.yml /home/ieducar/app/releases/20180226141730/phinx.yml as vagrant@localhost
+ DEBUG [c430c5ef] Command: /usr/bin/env ln -s /home/ieducar/app/shared/phinx.yml /home/ieducar/app/releases/20180226141730/phinx.yml
+  INFO [c430c5ef] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [d1a23514] Running [ -L /home/ieducar/app/releases/20180226141730/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [d1a23514] Command: [ -L /home/ieducar/app/releases/20180226141730/ieducar/configuration/ieducar.ini ]
+ DEBUG [d1a23514] Finished in 0.006 seconds with exit status 1 (failed).
+ DEBUG [576f9e1e] Running [ -f /home/ieducar/app/releases/20180226141730/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [576f9e1e] Command: [ -f /home/ieducar/app/releases/20180226141730/ieducar/configuration/ieducar.ini ]
+ DEBUG [576f9e1e] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [b4b9d2ea] Running /usr/bin/env rm /home/ieducar/app/releases/20180226141730/ieducar/configuration/ieducar.ini as vagrant@localhost
+ DEBUG [b4b9d2ea] Command: /usr/bin/env rm /home/ieducar/app/releases/20180226141730/ieducar/configuration/ieducar.ini
+  INFO [b4b9d2ea] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [9261e9b2] Running /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/configuration/ieducar.ini /home/ieducar/app/releases/20180226141730/ieducar/configuration/ieducar.ini as vagrant@localhost
+ DEBUG [9261e9b2] Command: /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/configuration/ieducar.ini /home/ieducar/app/releases/20180226141730/ieducar/configuration/ieducar.ini
+  INFO [9261e9b2] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [f637a06c] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141730/ieducar as vagrant@localhost
+ DEBUG [f637a06c] Command: /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141730/ieducar
+  INFO [f637a06c] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [6fb12cca] Running [ -L /home/ieducar/app/releases/20180226141730/ieducar/vendor ] as vagrant@localhost
+ DEBUG [6fb12cca] Command: [ -L /home/ieducar/app/releases/20180226141730/ieducar/vendor ]
+ DEBUG [6fb12cca] Finished in 0.006 seconds with exit status 1 (failed).
+ DEBUG [067e98ef] Running [ -d /home/ieducar/app/releases/20180226141730/ieducar/vendor ] as vagrant@localhost
+ DEBUG [067e98ef] Command: [ -d /home/ieducar/app/releases/20180226141730/ieducar/vendor ]
+ DEBUG [067e98ef] Finished in 0.005 seconds with exit status 1 (failed).
+  INFO [d52fd736] Running /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/vendor /home/ieducar/app/releases/20180226141730/ieducar/vendor as vagrant@localhost
+ DEBUG [d52fd736] Command: /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/vendor /home/ieducar/app/releases/20180226141730/ieducar/vendor
+  INFO [d52fd736] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [987724ac] Running /usr/bin/env ln -s /home/ieducar/app/releases/20180226141730 /home/ieducar/app/releases/current as vagrant@localhost
+ DEBUG [987724ac] Command: /usr/bin/env ln -s /home/ieducar/app/releases/20180226141730 /home/ieducar/app/releases/current
+  INFO [987724ac] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [c5e6699e] Running /usr/bin/env mv /home/ieducar/app/releases/current /home/ieducar/app as vagrant@localhost
+ DEBUG [c5e6699e] Command: /usr/bin/env mv /home/ieducar/app/releases/current /home/ieducar/app
+  INFO [c5e6699e] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [05d9773f] Running /usr/bin/env ls -x /home/ieducar/app/releases as vagrant@localhost
+ DEBUG [05d9773f] Command: /usr/bin/env ls -x /home/ieducar/app/releases
+ DEBUG [05d9773f] 	20180224002837	20180224003316	20180224003419	20180224004101	20180224004531
+20180224004620	20180226135316	20180226140259	20180226140349	20180226140720
+20180226141217	20180226141446	20180226141704	20180226141730
+ DEBUG [05d9773f] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 14 deployed releases on localhost
+ DEBUG [a6ec7765] Running [ -d /home/ieducar/app/current ] as vagrant@localhost
+ DEBUG [a6ec7765] Command: [ -d /home/ieducar/app/current ]
+ DEBUG [a6ec7765] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [7d280097] Running /usr/bin/env readlink /home/ieducar/app/current as vagrant@localhost
+ DEBUG [7d280097] Command: /usr/bin/env readlink /home/ieducar/app/current
+ DEBUG [7d280097] 	/home/ieducar/app/releases/20180226141730
+ DEBUG [7d280097] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [535e9a3d] Running /usr/bin/env rm -rf /home/ieducar/app/releases/20180224002837 /home/ieducar/app/releases/20180224003316 /home/ieducar/app/releases/20180224003419 /home/ieducar/app/releases/20180224004101 /home/ieducar/app/releases/20180224004531 /home/ieducar/app/releases/20180224004620 /home/ieducar/app/releases/20180226135316 /home/ieducar/app/releases/20180226140259 /home/ieducar/app/releases/20180226140349 as vagrant@localhost
+ DEBUG [535e9a3d] Command: /usr/bin/env rm -rf /home/ieducar/app/releases/20180224002837 /home/ieducar/app/releases/20180224003316 /home/ieducar/app/releases/20180224003419 /home/ieducar/app/releases/20180224004101 /home/ieducar/app/releases/20180224004531 /home/ieducar/app/releases/20180224004620 /home/ieducar/app/releases/20180226135316 /home/ieducar/app/releases/20180226140259 /home/ieducar/app/releases/20180226140349
+  INFO [535e9a3d] Finished in 3.524 seconds with exit status 0 (successful).
+ DEBUG [b8791c2b] Running if test ! -d /home/ieducar/app/releases; then echo "Directory does not exist '/home/ieducar/app/releases'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [b8791c2b] Command: if test ! -d /home/ieducar/app/releases; then echo "Directory does not exist '/home/ieducar/app/releases'" 1>&2; false; fi
+ DEBUG [b8791c2b] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [d70634a3] Running /usr/bin/env echo "Branch master (at 399cfaaf9eeee400a74453878e297a7acc496543) deployed as release 20180226141730 by rsdevigo" >> /home/ieducar/app/revisions.log as vagrant@localhost
+ DEBUG [d70634a3] Command: cd /home/ieducar/app/releases && /usr/bin/env echo "Branch master (at 399cfaaf9eeee400a74453878e297a7acc496543) deployed as release 20180226141730 by rsdevigo" >> /home/ieducar/app/revisions.log
+  INFO [d70634a3] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-02-26 10:19:50 -0400 cap develop deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [bb601df5] Running /usr/bin/env mkdir -p /tmp as vagrant@localhost
+ DEBUG [bb601df5] Command: /usr/bin/env mkdir -p /tmp
+  INFO [bb601df5] Finished in 4.623 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ieducar-develop-rsdevigo.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ieducar-develop-rsdevigo.sh 100.0%
+  INFO [57639834] Running /usr/bin/env chmod 700 /tmp/git-ssh-ieducar-develop-rsdevigo.sh as vagrant@localhost
+ DEBUG [57639834] Command: /usr/bin/env chmod 700 /tmp/git-ssh-ieducar-develop-rsdevigo.sh
+  INFO [57639834] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [3dfd88f1] Running /usr/bin/env git ls-remote https://github.com/GEDAE/ieducar.git HEAD as vagrant@localhost
+ DEBUG [3dfd88f1] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git ls-remote https://github.com/GEDAE/ieducar.git HEAD )
+ DEBUG [3dfd88f1] 	399cfaaf9eeee400a74453878e297a7acc496543	HEAD
+  INFO [3dfd88f1] Finished in 1.288 seconds with exit status 0 (successful).
+  INFO [28888114] Running /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/releases as vagrant@localhost
+ DEBUG [28888114] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/releases
+  INFO [28888114] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [0519e953] Running /usr/bin/env mkdir -p /home/ieducar/app/shared/ieducar/vendor as vagrant@localhost
+ DEBUG [0519e953] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared/ieducar/vendor
+  INFO [0519e953] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [a7b14c3f] Running /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/shared/ieducar/configuration as vagrant@localhost
+ DEBUG [a7b14c3f] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/shared/ieducar/configuration
+  INFO [a7b14c3f] Finished in 0.012 seconds with exit status 0 (successful).
+ DEBUG [de3fe94b] Running [ -f /home/ieducar/app/shared/phinx.yml ] as vagrant@localhost
+ DEBUG [de3fe94b] Command: [ -f /home/ieducar/app/shared/phinx.yml ]
+ DEBUG [de3fe94b] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [9c2988ab] Running [ -f /home/ieducar/app/shared/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [9c2988ab] Command: [ -f /home/ieducar/app/shared/ieducar/configuration/ieducar.ini ]
+ DEBUG [9c2988ab] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [f763c5d5] Running [ -f /home/ieducar/app/current/REVISION ] as vagrant@localhost
+ DEBUG [f763c5d5] Command: [ -f /home/ieducar/app/current/REVISION ]
+ DEBUG [f763c5d5] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [9008abf6] Running /usr/bin/env cat /home/ieducar/app/current/REVISION 2>/dev/null as vagrant@localhost
+ DEBUG [9008abf6] Command: /usr/bin/env cat /home/ieducar/app/current/REVISION 2>/dev/null
+ DEBUG [9008abf6] 	399cfaaf9eeee400a74453878e297a7acc496543
+ DEBUG [9008abf6] Finished in 0.011 seconds with exit status 0 (successful).
+ DEBUG [229e8f9b] Running if test ! -d /home/ieducar/app/shared; then echo "Directory does not exist '/home/ieducar/app/shared'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [229e8f9b] Command: if test ! -d /home/ieducar/app/shared; then echo "Directory does not exist '/home/ieducar/app/shared'" 1>&2; false; fi
+ DEBUG [229e8f9b] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [f5ace12c] Running /usr/bin/env [ -e composer.phar ] as vagrant@localhost
+ DEBUG [f5ace12c] Command: cd /home/ieducar/app/shared && /usr/bin/env [ -e composer.phar ]
+ DEBUG [f5ace12c] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [4a977a4b] Running [ -f /home/ieducar/app/repo/HEAD ] as vagrant@localhost
+ DEBUG [4a977a4b] Command: [ -f /home/ieducar/app/repo/HEAD ]
+ DEBUG [4a977a4b] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ieducar/app/repo
+ DEBUG [9f4bb381] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [9f4bb381] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [9f4bb381] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [2696ce66] Running /usr/bin/env git remote set-url origin https://github.com/GEDAE/ieducar.git as vagrant@localhost
+ DEBUG [2696ce66] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git remote set-url origin https://github.com/GEDAE/ieducar.git )
+  INFO [2696ce66] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [23efff48] Running /usr/bin/env git remote update --prune as vagrant@localhost
+ DEBUG [23efff48] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [23efff48] 	Fetching origin
+  INFO [23efff48] Finished in 1.260 seconds with exit status 0 (successful).
+ DEBUG [61b9dd07] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [61b9dd07] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [61b9dd07] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [5f26f49c] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141956 as vagrant@localhost
+ DEBUG [5f26f49c] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141956 )
+  INFO [5f26f49c] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [44882654] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ieducar/app/releases/20180226141956 as vagrant@localhost
+ DEBUG [44882654] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ieducar/app/releases/20180226141956 )
+  INFO [44882654] Finished in 0.351 seconds with exit status 0 (successful).
+ DEBUG [084e8bcb] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [084e8bcb] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [084e8bcb] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [267661bb] Running /usr/bin/env git rev-list --max-count=1 master as vagrant@localhost
+ DEBUG [267661bb] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [267661bb] 	399cfaaf9eeee400a74453878e297a7acc496543
+ DEBUG [267661bb] Finished in 0.010 seconds with exit status 0 (successful).
+ DEBUG [a426067b] Running if test ! -d /home/ieducar/app/releases/20180226141956; then echo "Directory does not exist '/home/ieducar/app/releases/20180226141956'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [a426067b] Command: if test ! -d /home/ieducar/app/releases/20180226141956; then echo "Directory does not exist '/home/ieducar/app/releases/20180226141956'" 1>&2; false; fi
+ DEBUG [a426067b] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [248ac958] Running /usr/bin/env echo "399cfaaf9eeee400a74453878e297a7acc496543" >> REVISION as vagrant@localhost
+ DEBUG [248ac958] Command: cd /home/ieducar/app/releases/20180226141956 && /usr/bin/env echo "399cfaaf9eeee400a74453878e297a7acc496543" >> REVISION
+  INFO [248ac958] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [48d3de95] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141956 /home/ieducar/app/releases/20180226141956/ieducar/configuration as vagrant@localhost
+ DEBUG [48d3de95] Command: /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141956 /home/ieducar/app/releases/20180226141956/ieducar/configuration
+  INFO [48d3de95] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [49a09a8e] Running [ -L /home/ieducar/app/releases/20180226141956/phinx.yml ] as vagrant@localhost
+ DEBUG [49a09a8e] Command: [ -L /home/ieducar/app/releases/20180226141956/phinx.yml ]
+ DEBUG [49a09a8e] Finished in 0.005 seconds with exit status 1 (failed).
+ DEBUG [9b7dd14a] Running [ -f /home/ieducar/app/releases/20180226141956/phinx.yml ] as vagrant@localhost
+ DEBUG [9b7dd14a] Command: [ -f /home/ieducar/app/releases/20180226141956/phinx.yml ]
+ DEBUG [9b7dd14a] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [107b96f5] Running /usr/bin/env rm /home/ieducar/app/releases/20180226141956/phinx.yml as vagrant@localhost
+ DEBUG [107b96f5] Command: /usr/bin/env rm /home/ieducar/app/releases/20180226141956/phinx.yml
+  INFO [107b96f5] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [52b7bb47] Running /usr/bin/env ln -s /home/ieducar/app/shared/phinx.yml /home/ieducar/app/releases/20180226141956/phinx.yml as vagrant@localhost
+ DEBUG [52b7bb47] Command: /usr/bin/env ln -s /home/ieducar/app/shared/phinx.yml /home/ieducar/app/releases/20180226141956/phinx.yml
+  INFO [52b7bb47] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [46625f72] Running [ -L /home/ieducar/app/releases/20180226141956/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [46625f72] Command: [ -L /home/ieducar/app/releases/20180226141956/ieducar/configuration/ieducar.ini ]
+ DEBUG [46625f72] Finished in 0.006 seconds with exit status 1 (failed).
+ DEBUG [5005a2d6] Running [ -f /home/ieducar/app/releases/20180226141956/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [5005a2d6] Command: [ -f /home/ieducar/app/releases/20180226141956/ieducar/configuration/ieducar.ini ]
+ DEBUG [5005a2d6] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [ce75b714] Running /usr/bin/env rm /home/ieducar/app/releases/20180226141956/ieducar/configuration/ieducar.ini as vagrant@localhost
+ DEBUG [ce75b714] Command: /usr/bin/env rm /home/ieducar/app/releases/20180226141956/ieducar/configuration/ieducar.ini
+  INFO [ce75b714] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [a42492cb] Running /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/configuration/ieducar.ini /home/ieducar/app/releases/20180226141956/ieducar/configuration/ieducar.ini as vagrant@localhost
+ DEBUG [a42492cb] Command: /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/configuration/ieducar.ini /home/ieducar/app/releases/20180226141956/ieducar/configuration/ieducar.ini
+  INFO [a42492cb] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [fac50802] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141956/ieducar as vagrant@localhost
+ DEBUG [fac50802] Command: /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226141956/ieducar
+  INFO [fac50802] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [91b8b5be] Running [ -L /home/ieducar/app/releases/20180226141956/ieducar/vendor ] as vagrant@localhost
+ DEBUG [91b8b5be] Command: [ -L /home/ieducar/app/releases/20180226141956/ieducar/vendor ]
+ DEBUG [91b8b5be] Finished in 0.005 seconds with exit status 1 (failed).
+ DEBUG [0718725f] Running [ -d /home/ieducar/app/releases/20180226141956/ieducar/vendor ] as vagrant@localhost
+ DEBUG [0718725f] Command: [ -d /home/ieducar/app/releases/20180226141956/ieducar/vendor ]
+ DEBUG [0718725f] Finished in 0.006 seconds with exit status 1 (failed).
+  INFO [ab80436a] Running /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/vendor /home/ieducar/app/releases/20180226141956/ieducar/vendor as vagrant@localhost
+ DEBUG [ab80436a] Command: /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/vendor /home/ieducar/app/releases/20180226141956/ieducar/vendor
+  INFO [ab80436a] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [b9d83405] Running if test ! -d /home/ieducar/app/releases/20180226141956; then echo "Directory does not exist '/home/ieducar/app/releases/20180226141956'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [b9d83405] Command: if test ! -d /home/ieducar/app/releases/20180226141956; then echo "Directory does not exist '/home/ieducar/app/releases/20180226141956'" 1>&2; false; fi
+ DEBUG [b9d83405] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [160dd412] Running php /home/ieducar/app/shared/composer.phar install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader as vagrant@localhost
+ DEBUG [160dd412] Command: cd /home/ieducar/app/releases/20180226141956 && php /home/ieducar/app/shared/composer.phar install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-02-26 10:20:20 -0400 cap develop deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [67427f86] Running /usr/bin/env mkdir -p /tmp as vagrant@localhost
+ DEBUG [67427f86] Command: /usr/bin/env mkdir -p /tmp
+  INFO [67427f86] Finished in 15.191 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ieducar-develop-rsdevigo.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ieducar-develop-rsdevigo.sh 100.0%
+  INFO [52f9a1e6] Running /usr/bin/env chmod 700 /tmp/git-ssh-ieducar-develop-rsdevigo.sh as vagrant@localhost
+ DEBUG [52f9a1e6] Command: /usr/bin/env chmod 700 /tmp/git-ssh-ieducar-develop-rsdevigo.sh
+  INFO [52f9a1e6] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [e83cc4ba] Running /usr/bin/env git ls-remote https://github.com/GEDAE/ieducar.git HEAD as vagrant@localhost
+ DEBUG [e83cc4ba] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git ls-remote https://github.com/GEDAE/ieducar.git HEAD )
+ DEBUG [e83cc4ba] 	399cfaaf9eeee400a74453878e297a7acc496543	HEAD
+  INFO [e83cc4ba] Finished in 1.920 seconds with exit status 0 (successful).
+  INFO [208015be] Running /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/releases as vagrant@localhost
+ DEBUG [208015be] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/releases
+  INFO [208015be] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [6b310ffb] Running /usr/bin/env mkdir -p /home/ieducar/app/shared/ieducar/vendor as vagrant@localhost
+ DEBUG [6b310ffb] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared/ieducar/vendor
+  INFO [6b310ffb] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [100f7b8f] Running /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/shared/ieducar/configuration as vagrant@localhost
+ DEBUG [100f7b8f] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/shared/ieducar/configuration
+  INFO [100f7b8f] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [0312cb18] Running [ -f /home/ieducar/app/shared/phinx.yml ] as vagrant@localhost
+ DEBUG [0312cb18] Command: [ -f /home/ieducar/app/shared/phinx.yml ]
+ DEBUG [0312cb18] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [ad130abb] Running [ -f /home/ieducar/app/shared/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [ad130abb] Command: [ -f /home/ieducar/app/shared/ieducar/configuration/ieducar.ini ]
+ DEBUG [ad130abb] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [0cd0fc94] Running [ -f /home/ieducar/app/current/REVISION ] as vagrant@localhost
+ DEBUG [0cd0fc94] Command: [ -f /home/ieducar/app/current/REVISION ]
+ DEBUG [0cd0fc94] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [e9fff866] Running /usr/bin/env cat /home/ieducar/app/current/REVISION 2>/dev/null as vagrant@localhost
+ DEBUG [e9fff866] Command: /usr/bin/env cat /home/ieducar/app/current/REVISION 2>/dev/null
+ DEBUG [e9fff866] 	399cfaaf9eeee400a74453878e297a7acc496543
+ DEBUG [e9fff866] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [552958b1] Running if test ! -d /home/ieducar/app/shared; then echo "Directory does not exist '/home/ieducar/app/shared'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [552958b1] Command: if test ! -d /home/ieducar/app/shared; then echo "Directory does not exist '/home/ieducar/app/shared'" 1>&2; false; fi
+ DEBUG [552958b1] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [61dc131e] Running /usr/bin/env [ -e composer.phar ] as vagrant@localhost
+ DEBUG [61dc131e] Command: cd /home/ieducar/app/shared && /usr/bin/env [ -e composer.phar ]
+ DEBUG [61dc131e] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [4b36cd49] Running [ -f /home/ieducar/app/repo/HEAD ] as vagrant@localhost
+ DEBUG [4b36cd49] Command: [ -f /home/ieducar/app/repo/HEAD ]
+ DEBUG [4b36cd49] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ieducar/app/repo
+ DEBUG [b1674025] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [b1674025] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [b1674025] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [e1f5a416] Running /usr/bin/env git remote set-url origin https://github.com/GEDAE/ieducar.git as vagrant@localhost
+ DEBUG [e1f5a416] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git remote set-url origin https://github.com/GEDAE/ieducar.git )
+  INFO [e1f5a416] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [8efe2ba9] Running /usr/bin/env git remote update --prune as vagrant@localhost
+ DEBUG [8efe2ba9] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [8efe2ba9] 	Fetching origin
+  INFO [8efe2ba9] Finished in 1.458 seconds with exit status 0 (successful).
+ DEBUG [9d045ff1] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [9d045ff1] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [9d045ff1] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [64721771] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226142037 as vagrant@localhost
+ DEBUG [64721771] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226142037 )
+  INFO [64721771] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [d69240d4] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ieducar/app/releases/20180226142037 as vagrant@localhost
+ DEBUG [d69240d4] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ieducar/app/releases/20180226142037 )
+  INFO [d69240d4] Finished in 0.334 seconds with exit status 0 (successful).
+ DEBUG [17f544e6] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [17f544e6] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [17f544e6] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [01f7f83b] Running /usr/bin/env git rev-list --max-count=1 master as vagrant@localhost
+ DEBUG [01f7f83b] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [01f7f83b] 	399cfaaf9eeee400a74453878e297a7acc496543
+ DEBUG [01f7f83b] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [3a51bc4b] Running if test ! -d /home/ieducar/app/releases/20180226142037; then echo "Directory does not exist '/home/ieducar/app/releases/20180226142037'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [3a51bc4b] Command: if test ! -d /home/ieducar/app/releases/20180226142037; then echo "Directory does not exist '/home/ieducar/app/releases/20180226142037'" 1>&2; false; fi
+ DEBUG [3a51bc4b] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [ac2a27a3] Running /usr/bin/env echo "399cfaaf9eeee400a74453878e297a7acc496543" >> REVISION as vagrant@localhost
+ DEBUG [ac2a27a3] Command: cd /home/ieducar/app/releases/20180226142037 && /usr/bin/env echo "399cfaaf9eeee400a74453878e297a7acc496543" >> REVISION
+  INFO [ac2a27a3] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [b202b7c9] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226142037 /home/ieducar/app/releases/20180226142037/ieducar/configuration as vagrant@localhost
+ DEBUG [b202b7c9] Command: /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226142037 /home/ieducar/app/releases/20180226142037/ieducar/configuration
+  INFO [b202b7c9] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [5c96735c] Running [ -L /home/ieducar/app/releases/20180226142037/phinx.yml ] as vagrant@localhost
+ DEBUG [5c96735c] Command: [ -L /home/ieducar/app/releases/20180226142037/phinx.yml ]
+ DEBUG [5c96735c] Finished in 0.007 seconds with exit status 1 (failed).
+ DEBUG [43838689] Running [ -f /home/ieducar/app/releases/20180226142037/phinx.yml ] as vagrant@localhost
+ DEBUG [43838689] Command: [ -f /home/ieducar/app/releases/20180226142037/phinx.yml ]
+ DEBUG [43838689] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [2b7c828f] Running /usr/bin/env rm /home/ieducar/app/releases/20180226142037/phinx.yml as vagrant@localhost
+ DEBUG [2b7c828f] Command: /usr/bin/env rm /home/ieducar/app/releases/20180226142037/phinx.yml
+  INFO [2b7c828f] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [70feaaa6] Running /usr/bin/env ln -s /home/ieducar/app/shared/phinx.yml /home/ieducar/app/releases/20180226142037/phinx.yml as vagrant@localhost
+ DEBUG [70feaaa6] Command: /usr/bin/env ln -s /home/ieducar/app/shared/phinx.yml /home/ieducar/app/releases/20180226142037/phinx.yml
+  INFO [70feaaa6] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [d33ab79b] Running [ -L /home/ieducar/app/releases/20180226142037/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [d33ab79b] Command: [ -L /home/ieducar/app/releases/20180226142037/ieducar/configuration/ieducar.ini ]
+ DEBUG [d33ab79b] Finished in 0.005 seconds with exit status 1 (failed).
+ DEBUG [b38f6ddb] Running [ -f /home/ieducar/app/releases/20180226142037/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [b38f6ddb] Command: [ -f /home/ieducar/app/releases/20180226142037/ieducar/configuration/ieducar.ini ]
+ DEBUG [b38f6ddb] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [9451f101] Running /usr/bin/env rm /home/ieducar/app/releases/20180226142037/ieducar/configuration/ieducar.ini as vagrant@localhost
+ DEBUG [9451f101] Command: /usr/bin/env rm /home/ieducar/app/releases/20180226142037/ieducar/configuration/ieducar.ini
+  INFO [9451f101] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [aa6c009b] Running /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/configuration/ieducar.ini /home/ieducar/app/releases/20180226142037/ieducar/configuration/ieducar.ini as vagrant@localhost
+ DEBUG [aa6c009b] Command: /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/configuration/ieducar.ini /home/ieducar/app/releases/20180226142037/ieducar/configuration/ieducar.ini
+  INFO [aa6c009b] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [4635b4fb] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226142037/ieducar as vagrant@localhost
+ DEBUG [4635b4fb] Command: /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226142037/ieducar
+  INFO [4635b4fb] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [efbd3fbc] Running [ -L /home/ieducar/app/releases/20180226142037/ieducar/vendor ] as vagrant@localhost
+ DEBUG [efbd3fbc] Command: [ -L /home/ieducar/app/releases/20180226142037/ieducar/vendor ]
+ DEBUG [efbd3fbc] Finished in 0.006 seconds with exit status 1 (failed).
+ DEBUG [37f5157f] Running [ -d /home/ieducar/app/releases/20180226142037/ieducar/vendor ] as vagrant@localhost
+ DEBUG [37f5157f] Command: [ -d /home/ieducar/app/releases/20180226142037/ieducar/vendor ]
+ DEBUG [37f5157f] Finished in 0.005 seconds with exit status 1 (failed).
+  INFO [978a929f] Running /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/vendor /home/ieducar/app/releases/20180226142037/ieducar/vendor as vagrant@localhost
+ DEBUG [978a929f] Command: /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/vendor /home/ieducar/app/releases/20180226142037/ieducar/vendor
+  INFO [978a929f] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [0cecabbe] Running if test ! -d /home/ieducar/app/current/ieducar; then echo "Directory does not exist '/home/ieducar/app/current/ieducar'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [0cecabbe] Command: if test ! -d /home/ieducar/app/current/ieducar; then echo "Directory does not exist '/home/ieducar/app/current/ieducar'" 1>&2; false; fi
+ DEBUG [0cecabbe] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [c9986557] Running php /home/ieducar/app/shared/composer.phar install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader as vagrant@localhost
+ DEBUG [c9986557] Command: cd /home/ieducar/app/current/ieducar && php /home/ieducar/app/shared/composer.phar install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader
+  INFO [c9986557] Finished in 153.876 seconds with exit status 0 (successful).
+ DEBUG [45a3bcc5] Running if test ! -d /home/ieducar/app/releases/20180226142037; then echo "Directory does not exist '/home/ieducar/app/releases/20180226142037'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [45a3bcc5] Command: if test ! -d /home/ieducar/app/releases/20180226142037; then echo "Directory does not exist '/home/ieducar/app/releases/20180226142037'" 1>&2; false; fi
+ DEBUG [45a3bcc5] Finished in 0.014 seconds with exit status 0 (successful).
+  INFO [895e5498] Running /usr/bin/env ieducar/vendor/bin/phinx migrate -e development as vagrant@localhost
+ DEBUG [895e5498] Command: cd /home/ieducar/app/releases/20180226142037 && /usr/bin/env ieducar/vendor/bin/phinx migrate -e development
+ DEBUG [895e5498] 	Phinx by Rob Morgan - https://phinx.org. version 0.4.6
+ DEBUG [895e5498] 	
+ DEBUG [895e5498] 	
+ DEBUG [895e5498] 	using config file ./home/ieducar/app/shared/phinx.yml
+ DEBUG [895e5498] 	
+ DEBUG [895e5498] 	using config parser yaml
+ DEBUG [895e5498] 	
+ DEBUG [895e5498] 	using migration path /home/ieducar/app/releases/20180226142037/ieducar/misc/database/migrations
+ DEBUG [895e5498] 	
+ DEBUG [895e5498] 	using environment development
+ DEBUG [895e5498] 	
+ DEBUG [895e5498] 	using adapter pgsql
+ DEBUG [895e5498] 	
+ DEBUG [895e5498] 	using database ieducar
+ DEBUG [895e5498] 	
+ DEBUG [895e5498] 	
+ DEBUG [895e5498] 	                                                                                                                       
+ DEBUG [895e5498] 	
+ DEBUG [895e5498] 	  [InvalidArgumentException]                                                                                           
+ DEBUG [895e5498] 	
+ DEBUG [895e5498] 	  There was a problem connecting to the database: SQLSTATE[08006] [7] could not connect to server: Connection refused  
+ DEBUG [895e5498] 	
+ DEBUG [895e5498] 	  	Is the server running on host "localhost" (::1) and accepting                                                       
+ DEBUG [895e5498] 	
+  	TCP/IP connections on port 5433?                                                                                    
+  could not connect to server: Connection refused                                                                      
+  	Is the server running on host "localhost" (127.0.0.1) and accepting                                                 
+  	TCP/IP connections on port 5433?                                                                                    
+                                                                                                                       
+
+migrate [-c|--configuration CONFIGURATION] [-p|--parser PARSER] [-e|--environment ENVIRONMENT] [-t|--target TARGET] [-d|--date DATE]
+
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-02-26 10:24:36 -0400 cap develop deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [fa9e833a] Running /usr/bin/env mkdir -p /tmp as vagrant@localhost
+ DEBUG [fa9e833a] Command: /usr/bin/env mkdir -p /tmp
+  INFO [fa9e833a] Finished in 5.464 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ieducar-develop-rsdevigo.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ieducar-develop-rsdevigo.sh 100.0%
+  INFO [5ff17401] Running /usr/bin/env chmod 700 /tmp/git-ssh-ieducar-develop-rsdevigo.sh as vagrant@localhost
+ DEBUG [5ff17401] Command: /usr/bin/env chmod 700 /tmp/git-ssh-ieducar-develop-rsdevigo.sh
+  INFO [5ff17401] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [f1dc10e4] Running /usr/bin/env git ls-remote https://github.com/GEDAE/ieducar.git HEAD as vagrant@localhost
+ DEBUG [f1dc10e4] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git ls-remote https://github.com/GEDAE/ieducar.git HEAD )
+ DEBUG [f1dc10e4] 	399cfaaf9eeee400a74453878e297a7acc496543	HEAD
+  INFO [f1dc10e4] Finished in 1.484 seconds with exit status 0 (successful).
+  INFO [e6c9b98f] Running /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/releases as vagrant@localhost
+ DEBUG [e6c9b98f] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/releases
+  INFO [e6c9b98f] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [d48777fb] Running /usr/bin/env mkdir -p /home/ieducar/app/shared/ieducar/vendor as vagrant@localhost
+ DEBUG [d48777fb] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared/ieducar/vendor
+  INFO [d48777fb] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [0d37bec3] Running /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/shared/ieducar/configuration as vagrant@localhost
+ DEBUG [0d37bec3] Command: /usr/bin/env mkdir -p /home/ieducar/app/shared /home/ieducar/app/shared/ieducar/configuration
+  INFO [0d37bec3] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [876c481f] Running [ -f /home/ieducar/app/shared/phinx.yml ] as vagrant@localhost
+ DEBUG [876c481f] Command: [ -f /home/ieducar/app/shared/phinx.yml ]
+ DEBUG [876c481f] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [e0b0f91f] Running [ -f /home/ieducar/app/shared/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [e0b0f91f] Command: [ -f /home/ieducar/app/shared/ieducar/configuration/ieducar.ini ]
+ DEBUG [e0b0f91f] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [db9d3707] Running [ -f /home/ieducar/app/current/REVISION ] as vagrant@localhost
+ DEBUG [db9d3707] Command: [ -f /home/ieducar/app/current/REVISION ]
+ DEBUG [db9d3707] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [16402811] Running /usr/bin/env cat /home/ieducar/app/current/REVISION 2>/dev/null as vagrant@localhost
+ DEBUG [16402811] Command: /usr/bin/env cat /home/ieducar/app/current/REVISION 2>/dev/null
+ DEBUG [16402811] 	399cfaaf9eeee400a74453878e297a7acc496543
+ DEBUG [16402811] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [465708db] Running if test ! -d /home/ieducar/app/shared; then echo "Directory does not exist '/home/ieducar/app/shared'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [465708db] Command: if test ! -d /home/ieducar/app/shared; then echo "Directory does not exist '/home/ieducar/app/shared'" 1>&2; false; fi
+ DEBUG [465708db] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [1741b45d] Running /usr/bin/env [ -e composer.phar ] as vagrant@localhost
+ DEBUG [1741b45d] Command: cd /home/ieducar/app/shared && /usr/bin/env [ -e composer.phar ]
+ DEBUG [1741b45d] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [e9ee853c] Running [ -f /home/ieducar/app/repo/HEAD ] as vagrant@localhost
+ DEBUG [e9ee853c] Command: [ -f /home/ieducar/app/repo/HEAD ]
+ DEBUG [e9ee853c] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ieducar/app/repo
+ DEBUG [97ba9c2e] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [97ba9c2e] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [97ba9c2e] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [aa424047] Running /usr/bin/env git remote set-url origin https://github.com/GEDAE/ieducar.git as vagrant@localhost
+ DEBUG [aa424047] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git remote set-url origin https://github.com/GEDAE/ieducar.git )
+  INFO [aa424047] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [6f5aff36] Running /usr/bin/env git remote update --prune as vagrant@localhost
+ DEBUG [6f5aff36] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [6f5aff36] 	Fetching origin
+  INFO [6f5aff36] Finished in 1.017 seconds with exit status 0 (successful).
+ DEBUG [dc4f7e57] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [dc4f7e57] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [dc4f7e57] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [1cfb3382] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226142443 as vagrant@localhost
+ DEBUG [1cfb3382] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226142443 )
+  INFO [1cfb3382] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [5d4fecfd] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ieducar/app/releases/20180226142443 as vagrant@localhost
+ DEBUG [5d4fecfd] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ieducar/app/releases/20180226142443 )
+  INFO [5d4fecfd] Finished in 0.319 seconds with exit status 0 (successful).
+ DEBUG [0341f5b4] Running if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [0341f5b4] Command: if test ! -d /home/ieducar/app/repo; then echo "Directory does not exist '/home/ieducar/app/repo'" 1>&2; false; fi
+ DEBUG [0341f5b4] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [3d2e34d6] Running /usr/bin/env git rev-list --max-count=1 master as vagrant@localhost
+ DEBUG [3d2e34d6] Command: cd /home/ieducar/app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ieducar-develop-rsdevigo.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [3d2e34d6] 	399cfaaf9eeee400a74453878e297a7acc496543
+ DEBUG [3d2e34d6] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [e4d146e7] Running if test ! -d /home/ieducar/app/releases/20180226142443; then echo "Directory does not exist '/home/ieducar/app/releases/20180226142443'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [e4d146e7] Command: if test ! -d /home/ieducar/app/releases/20180226142443; then echo "Directory does not exist '/home/ieducar/app/releases/20180226142443'" 1>&2; false; fi
+ DEBUG [e4d146e7] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [d0d70d37] Running /usr/bin/env echo "399cfaaf9eeee400a74453878e297a7acc496543" >> REVISION as vagrant@localhost
+ DEBUG [d0d70d37] Command: cd /home/ieducar/app/releases/20180226142443 && /usr/bin/env echo "399cfaaf9eeee400a74453878e297a7acc496543" >> REVISION
+  INFO [d0d70d37] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [718531bf] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226142443 /home/ieducar/app/releases/20180226142443/ieducar/configuration as vagrant@localhost
+ DEBUG [718531bf] Command: /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226142443 /home/ieducar/app/releases/20180226142443/ieducar/configuration
+  INFO [718531bf] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [bcb53625] Running [ -L /home/ieducar/app/releases/20180226142443/phinx.yml ] as vagrant@localhost
+ DEBUG [bcb53625] Command: [ -L /home/ieducar/app/releases/20180226142443/phinx.yml ]
+ DEBUG [bcb53625] Finished in 0.005 seconds with exit status 1 (failed).
+ DEBUG [6cfd857a] Running [ -f /home/ieducar/app/releases/20180226142443/phinx.yml ] as vagrant@localhost
+ DEBUG [6cfd857a] Command: [ -f /home/ieducar/app/releases/20180226142443/phinx.yml ]
+ DEBUG [6cfd857a] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [03853903] Running /usr/bin/env rm /home/ieducar/app/releases/20180226142443/phinx.yml as vagrant@localhost
+ DEBUG [03853903] Command: /usr/bin/env rm /home/ieducar/app/releases/20180226142443/phinx.yml
+  INFO [03853903] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [bd1405f3] Running /usr/bin/env ln -s /home/ieducar/app/shared/phinx.yml /home/ieducar/app/releases/20180226142443/phinx.yml as vagrant@localhost
+ DEBUG [bd1405f3] Command: /usr/bin/env ln -s /home/ieducar/app/shared/phinx.yml /home/ieducar/app/releases/20180226142443/phinx.yml
+  INFO [bd1405f3] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG [80544efa] Running [ -L /home/ieducar/app/releases/20180226142443/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [80544efa] Command: [ -L /home/ieducar/app/releases/20180226142443/ieducar/configuration/ieducar.ini ]
+ DEBUG [80544efa] Finished in 0.005 seconds with exit status 1 (failed).
+ DEBUG [ea9ba3c1] Running [ -f /home/ieducar/app/releases/20180226142443/ieducar/configuration/ieducar.ini ] as vagrant@localhost
+ DEBUG [ea9ba3c1] Command: [ -f /home/ieducar/app/releases/20180226142443/ieducar/configuration/ieducar.ini ]
+ DEBUG [ea9ba3c1] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [fc663d9c] Running /usr/bin/env rm /home/ieducar/app/releases/20180226142443/ieducar/configuration/ieducar.ini as vagrant@localhost
+ DEBUG [fc663d9c] Command: /usr/bin/env rm /home/ieducar/app/releases/20180226142443/ieducar/configuration/ieducar.ini
+  INFO [fc663d9c] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [efdfc586] Running /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/configuration/ieducar.ini /home/ieducar/app/releases/20180226142443/ieducar/configuration/ieducar.ini as vagrant@localhost
+ DEBUG [efdfc586] Command: /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/configuration/ieducar.ini /home/ieducar/app/releases/20180226142443/ieducar/configuration/ieducar.ini
+  INFO [efdfc586] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [c9251c2e] Running /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226142443/ieducar as vagrant@localhost
+ DEBUG [c9251c2e] Command: /usr/bin/env mkdir -p /home/ieducar/app/releases/20180226142443/ieducar
+  INFO [c9251c2e] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [0f71722e] Running [ -L /home/ieducar/app/releases/20180226142443/ieducar/vendor ] as vagrant@localhost
+ DEBUG [0f71722e] Command: [ -L /home/ieducar/app/releases/20180226142443/ieducar/vendor ]
+ DEBUG [0f71722e] Finished in 0.005 seconds with exit status 1 (failed).
+ DEBUG [1ca69228] Running [ -d /home/ieducar/app/releases/20180226142443/ieducar/vendor ] as vagrant@localhost
+ DEBUG [1ca69228] Command: [ -d /home/ieducar/app/releases/20180226142443/ieducar/vendor ]
+ DEBUG [1ca69228] Finished in 0.005 seconds with exit status 1 (failed).
+  INFO [a89fb9d0] Running /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/vendor /home/ieducar/app/releases/20180226142443/ieducar/vendor as vagrant@localhost
+ DEBUG [a89fb9d0] Command: /usr/bin/env ln -s /home/ieducar/app/shared/ieducar/vendor /home/ieducar/app/releases/20180226142443/ieducar/vendor
+  INFO [a89fb9d0] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [05b540e9] Running if test ! -d /home/ieducar/app/current/ieducar; then echo "Directory does not exist '/home/ieducar/app/current/ieducar'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [05b540e9] Command: if test ! -d /home/ieducar/app/current/ieducar; then echo "Directory does not exist '/home/ieducar/app/current/ieducar'" 1>&2; false; fi
+ DEBUG [05b540e9] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [695f3211] Running php /home/ieducar/app/shared/composer.phar install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader as vagrant@localhost
+ DEBUG [695f3211] Command: cd /home/ieducar/app/current/ieducar && php /home/ieducar/app/shared/composer.phar install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader
+  INFO [695f3211] Finished in 0.317 seconds with exit status 0 (successful).
+ DEBUG [6dc7d3d8] Running if test ! -d /home/ieducar/app/releases/20180226142443; then echo "Directory does not exist '/home/ieducar/app/releases/20180226142443'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [6dc7d3d8] Command: if test ! -d /home/ieducar/app/releases/20180226142443; then echo "Directory does not exist '/home/ieducar/app/releases/20180226142443'" 1>&2; false; fi
+ DEBUG [6dc7d3d8] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [a901a7c9] Running /usr/bin/env ieducar/vendor/bin/phinx migrate -e development as vagrant@localhost
+ DEBUG [a901a7c9] Command: cd /home/ieducar/app/releases/20180226142443 && /usr/bin/env ieducar/vendor/bin/phinx migrate -e development
+ DEBUG [a901a7c9] 	Phinx by Rob Morgan - https://phinx.org. version 0.4.6
+ DEBUG [a901a7c9] 	
+ DEBUG [a901a7c9] 	
+ DEBUG [a901a7c9] 	using config file ./home/ieducar/app/shared/phinx.yml
+ DEBUG [a901a7c9] 	
+ DEBUG [a901a7c9] 	using config parser yaml
+ DEBUG [a901a7c9] 	
+ DEBUG [a901a7c9] 	using migration path /home/ieducar/app/releases/20180226142443/ieducar/misc/database/migrations
+ DEBUG [a901a7c9] 	
+ DEBUG [a901a7c9] 	using environment development
+ DEBUG [a901a7c9] 	
+ DEBUG [a901a7c9] 	using adapter pgsql
+ DEBUG [a901a7c9] 	
+ DEBUG [a901a7c9] 	using database ieducar
+ DEBUG [a901a7c9] 	
+ DEBUG [a901a7c9] 	
+All Done. Took 0.2153s
+  INFO [a901a7c9] Finished in 0.281 seconds with exit status 0 (successful).
+  INFO [a2a6192f] Running /usr/bin/env ln -s /home/ieducar/app/releases/20180226142443 /home/ieducar/app/releases/current as vagrant@localhost
+ DEBUG [a2a6192f] Command: /usr/bin/env ln -s /home/ieducar/app/releases/20180226142443 /home/ieducar/app/releases/current
+  INFO [a2a6192f] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [326fa02a] Running /usr/bin/env mv /home/ieducar/app/releases/current /home/ieducar/app as vagrant@localhost
+ DEBUG [326fa02a] Command: /usr/bin/env mv /home/ieducar/app/releases/current /home/ieducar/app
+  INFO [326fa02a] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG [d7124a7d] Running /usr/bin/env ls -x /home/ieducar/app/releases as vagrant@localhost
+ DEBUG [d7124a7d] Command: /usr/bin/env ls -x /home/ieducar/app/releases
+ DEBUG [d7124a7d] 	20180226140720	20180226141217	20180226141446	20180226141704	20180226141730
+20180226141956	20180226142037	20180226142443
+ DEBUG [d7124a7d] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 8 deployed releases on localhost
+ DEBUG [099e0dd2] Running [ -d /home/ieducar/app/current ] as vagrant@localhost
+ DEBUG [099e0dd2] Command: [ -d /home/ieducar/app/current ]
+ DEBUG [099e0dd2] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [2550613e] Running /usr/bin/env readlink /home/ieducar/app/current as vagrant@localhost
+ DEBUG [2550613e] Command: /usr/bin/env readlink /home/ieducar/app/current
+ DEBUG [2550613e] 	/home/ieducar/app/releases/20180226142443
+ DEBUG [2550613e] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [176700c1] Running /usr/bin/env rm -rf /home/ieducar/app/releases/20180226140720 /home/ieducar/app/releases/20180226141217 /home/ieducar/app/releases/20180226141446 as vagrant@localhost
+ DEBUG [176700c1] Command: /usr/bin/env rm -rf /home/ieducar/app/releases/20180226140720 /home/ieducar/app/releases/20180226141217 /home/ieducar/app/releases/20180226141446
+  INFO [176700c1] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [3893ec2c] Running if test ! -d /home/ieducar/app/releases; then echo "Directory does not exist '/home/ieducar/app/releases'" 1>&2; false; fi as vagrant@localhost
+ DEBUG [3893ec2c] Command: if test ! -d /home/ieducar/app/releases; then echo "Directory does not exist '/home/ieducar/app/releases'" 1>&2; false; fi
+ DEBUG [3893ec2c] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [b6251f5f] Running /usr/bin/env echo "Branch master (at 399cfaaf9eeee400a74453878e297a7acc496543) deployed as release 20180226142443 by rsdevigo" >> /home/ieducar/app/revisions.log as vagrant@localhost
+ DEBUG [b6251f5f] Command: cd /home/ieducar/app/releases && /usr/bin/env echo "Branch master (at 399cfaaf9eeee400a74453878e297a7acc496543) deployed as release 20180226142443 by rsdevigo" >> /home/ieducar/app/revisions.log
+  INFO [b6251f5f] Finished in 0.007 seconds with exit status 0 (successful).

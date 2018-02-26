@@ -13,7 +13,7 @@ set :composer_working_dir, "#{release_path.join("ieducar")}"
 SSHKit.config.command_map[:composer] = "php #{shared_path.join("composer.phar")}"
 
 namespace :deploy do
-  after :starting, 'composer:install_executable'
+ after :starting, 'composer:install_executable'
 end
 
 # Default value for :format is :airbrussh.
